@@ -1,0 +1,199 @@
+/*
+	Style sheet for Project Drummer Boy
+	CIS 334 and 334L
+	filename: PDB_CSS.css
+	
+*/
+html {
+   overflow-y: auto;
+}
+/*Fonts */
+
+@font-face {
+	font-family: fender;
+	src: url(./fender/strato-linked-webfont.ttf);
+}
+
+/* Page Body Styles */
+body {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 30px;
+   width: 100%;
+   max-width: 960px;
+   min-width: 640px;
+   height: 100%;
+   background-color: rgb(255, 255, 255);
+   
+}
+
+/* Main Guitar Image Style */
+body > img {
+   display: block;
+   z-index: -1;
+   width: 500px;
+   height: 1150px;
+   margin: 0;
+   padding: 0;
+   bottom: 0;
+}
+
+/*Vocab Image Styles */
+#guitarVocab {
+	display: block;
+	position: relative;
+	z-index: -1;
+	margin-top: 70px;
+   cursor: pointer;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ /*Page Navbar Style */
+.navbar ul{
+   overflow: hidden;
+   background-color: rgb(0, 0, 0);
+   position: fixed; /* Set the navbar to fixed position */
+   top: 0; /* Position the navbar at the top of the page */
+   width: 100%; /* Full width */
+   height: 40px;
+   left: 0;
+   right: 0; 
+   list-style-type:none;
+   text-align: center;
+   z-index: 1;
+}
+
+.navbar li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 auto;
+}
+.navbar a {
+  display: inline-block;
+  font-family: Palatino;
+  font-size: 1.4em;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px ;
+  text-decoration: none;
+  margin: 0;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Heading Styles */
+
+h1 {
+	font-family: fender;
+   font-size: 2.4em;
+   line-height: 2.4em;
+   font-family: Palatino;
+   letter-spacing: 0.2em;
+   text-align: center;
+   font-weight: bold;
+   color: rgb(0, 0, 0);
+}
+
+h2, h3 {
+   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+   padding: 0.5em 0;
+}
+
+h2 {
+   font-size: 2em;
+   text-align: center;
+   font-weight: bold;
+   color: rgb(0, 0, 0);
+}
+
+h2#initial {
+   text-align: center;
+   margin-top: -50px;
+}
+
+/* Article Styles */
+/*-- ProjectStrummerBoy --*/
+article#message {
+   position: absolute;
+   margin-top: 100px;
+   width: 200px;
+   margin-left: 380px;
+   z-index: 0;
+}
+
+#instr{
+	margin-top: 80px;
+   padding-bottom: 5px;
+   color: #6e5f34;
+   font-family: fender;
+   font-size: 1.9em;
+   text-align: center;
+}
+
+#instr2{
+	padding-top: 5px;
+   color: #6e5f34;
+   font-family: fender;
+   font-size: 2.5em;
+   text-align: center;
+}
+
+
+/*-- Vocabulary --*/
+#vocab {
+	margin-top: 100px;
+}
+
+/* Paragraph Styles */
+ p {
+	 font-size: 1.5em;
+	 line-height: 1.6;
+	 text-align: justify;
+	 margin-bottom: 20px;
+	 margin-top: 20px;
+ }
+ /* Divider image */
+ #guitarDiv {
+	display: block;
+	position: relative;
+	z-index: -1;
+	margin: 0 auto;
+	background: white;
+	
+ }
+ 
+ #guitarDiv img {
+	 width: 250px;
+	 height: 70px;
+ }
+
+
+/* Footer Styles */
+footer {
+   width: 100%;
+   height: 10px;
+   position: absolute;
+   bottom: 100;
+   left: 0;
+   background-color: black;
+}
+
+.group {
+   text-align: center;
+   font-size: 1.2em;
+   padding-top: -10px;
+   margin-top: 10px;
+}
+
+#names {
+   margin-top: -25px;
+   margin-bottom: -5px;
+}

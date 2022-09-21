@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link href="PDB_Style.css" rel="stylesheet" />
+		<script lang="javascript" type="text/javascript" src="PSB_JS.js"></script> <!----references to the javascript PSB_JS.js---->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Project Strummer Boy</title>
+	</head>
+	<body>
+		<header>
+		<div style="position:relative; top: 50px;">
+			<h1>Project Strummer Boy</h1>
+			<h2 id="initial">Click the Strings</h2>
+			<!------------------Navigation Bar----------BOO!!-------->
+			<nav class="navbar" id="#navbar">
+				<ul>
+				<li><a href="Vocabulary.html">Vocabulary</a></li>  <!--Navigate to Hand Positionning-->
+				<li><a href="ProjectStrummerBoy.html">Project Strummer Boy</a></li> <!--Navigate to the home-->
+				<li><a href="TipsAndTricks.html">Tips and Tricks</a></li> <!--Navigate to Tricks and Tricks-->
+				</ul>
+			</nav>
+		</div>
+		</header>
+		<article id="message">
+			<h3 id="instr"></h3>
+			<h3 id="instr2"></h3>
+		</article>
+			<!------------------Guitar Image/Map 480 x 1138-------------------->     <!--Side Note: "title=" allows text to hover over the area -->
+		<script>
+			function writeit(txt, txt2) {
+				document.getElementById('instr').innerHTML = txt;
+				document.getElementById('instr2').innerHTML = txt2;
+			}
+
+			function res() {
+				document.getElementById('instr').innerHTML = '';
+				document.getElementById('instr2').innerHTML = '';
+			}
+		</script>
+		<img src="./image/guitarZoom.png" alt="Guitar" class="center" title="click on neck to play string" width="480" height="1138" usemap="#guitarMap"/>
+			<map name="guitarMap" class="map">
+			<!-- Top fret  -->
+			<area shape="rect" coords="153, 655, 184, 839" title="Lower E1" alt="lowerE1" id="lowere1" onclick="lowerE1()" onmouseover="writeit('Lower','E');" onmouseout="res()">
+			<area shape="rect" coords="185, 655, 210, 839" alt="a1" title="A1" id="a1" onclick="a1()" onmouseover="writeit('<br>','A');" onmouseout="res()">
+			<area shape="rect" coords="211, 655, 238, 839" alt="d1" title="D1" id="d1" onclick="d1()" onmouseover="writeit('<br>','D')" onmouseout="res()">
+			<area shape="rect" coords="239, 655, 270, 839" alt="g1" title="G1" id="g1" onclick="g1()" onmouseover="writeit('<br>','G')" onmouseout="res()">
+			<area shape="rect" coords="271, 655, 298, 839" alt="b1" title="B1"id="b1" onclick="b1()" onmouseover="writeit('<br>','B')" onmouseout="res()">
+			<area shape="rect" coords="299, 655, 340, 839" alt="upperE1" title="E1" id="uppere1" onclick="upperE1()" onmouseover="writeit('Upper','E')" onmouseout="res()">
+			<!--Second fret-->
+			<area shape="rect" coords="153, 839.1, 184, 978" alt="lowerE2" title="E2" id="lowere2" onclick="lowerE2()" onmouseover="writeit('Lower','E')" onmouseout="res()">
+			<area shape="rect" coords="185, 839.1, 210, 978" alt="a2" title="A2" id="a2" onclick="a2()" onmouseover="writeit('<br>','A')" onmouseout="res()">
+			<area shape="rect" coords="211, 839.1, 238, 978" alt="d2" title="D2"id="d2" onclick="d2()" onmouseover="writeit('<br>','D')" onmouseout="res()">
+			<area shape="rect" coords="239, 839.1, 270, 978" alt="g2" title="G2"id="g2" onclick="g2()" onmouseover="writeit('<br>','G')" onmouseout="res()">
+			<area shape="rect" coords="271, 839.1, 298, 978" alt="b2" title="B2"id="b2" onclick="b2()" onmouseover="writeit('<br>','B')" onmouseout="res()">
+			<area shape="rect" coords="299, 839.1, 340, 978" alt="upperE2" title="Upper E2"id="uppere2" onclick="upperE2('Upper E2')" onmouseover="writeit('Upper','E')" onmouseout="res()">
+			<!--Third fret-->
+			<area shape="rect" coords="153, 978.1, 184, 1110" alt="lowerE3" title="Lower E3" id="lowere3" onclick="lowerE3()" onmouseover="writeit('Lower','E')" onmouseout="res()">
+			<area shape="rect" coords="185, 978.1, 210, 1110" alt="a3" title="A3" id="a3" onclick="a3()" onmouseover="writeit('<br>','A')" onmouseout="res()">
+			<area shape="rect" coords="211, 978.1, 238, 1110" alt="d3" title="D3" id="d3" onclick="d3()" onmouseover="writeit('<br>','D')" onmouseout="res()">
+			<area shape="rect" coords="239, 978.1, 270, 1110" alt="g3" title="G3" id="g3" onclick="g3()" onmouseover="writeit('<br>','G')" onmouseout="res()">
+			<area shape="rect" coords="271, 978.1, 298, 1110" alt="b3" title="B3" id="b3" onclick="b3()" onmouseover="writeit('<br>','B')" onmouseout="res()">
+			<area shape="rect" coords="299, 978.1, 340, 1110" alt="upperE3" title="E3"id="uppere3" onclick="upperE3('Upper E3')" onmouseover="writeit('Upper','E')" onmouseout="res()">
+			<!--Guitar Bottom-->
+			<area shape="rect" coords="153, 1110.1, 184, 1138" alt="lowerE4" title="No Play" id="lowere4" onmouseover="writeit('Lower','E')" onmouseout="res()">
+			<area shape="rect" coords="185, 1110.1, 210, 1138" alt="lowerE4" title="No Play" id="lowere4" onmouseover="writeit('<br>','A')" onmouseout="res()">
+			<area shape="rect" coords="211, 1110.1, 238, 1138" alt="lowerE4" title="No Play" id="lowere4" onmouseover="writeit('<br>','D')" onmouseout="res()">
+			<area shape="rect" coords="239, 1110.1, 270, 1138" alt="lowerE4" title="No Play" id="lowere4" onmouseover="writeit('<br>','G')" onmouseout="res()">
+			<area shape="rect" coords="271, 1110.1, 298, 1138" alt="lowerE4" title="No Play" id="lowere4" onmouseover="writeit('<br>','B')" onmouseout="res()">
+			<area shape="rect" coords="299, 1110.1, 340, 1138" alt="lowerE4" title="No Play" id="lowere4" onmouseover="writeit('Upper','E')" onmouseout="res()">
+		</map>
+			<!---------------------Audio-------------------------->
+			<!--Top fret audio -->
+			<audio id="lowerE1"><source src="./sounds/Lower-E1.mp3" type="audio/mpeg"></audio>
+			<audio id="a1"><source src="./sounds/A1.mp3" type="audio/mpeg"></audio>
+			<audio id="d1"><source src="./sounds/D1.mp3" type="audio/mpeg"></audio>
+			<audio id="g1"><source src="./sounds/G1.mp3" type="audio/mpeg"></audio>
+			<audio id="b1"><source src="./sounds/B1.mp3" type="audio/mpeg"></audio>
+			<audio id="upperE1"><source src="./sounds/Upper-E1.mp3" type="audio/mpeg"></audio>
+			<!--Second fret audio-->
+			<audio id="lowerE2"><source src="./sounds/Lower-E2.mp3" type="audio/mpeg"></audio>
+			<audio id="a2"><source src="./sounds/A2.mp3" type="audio/mpeg"></audio>
+			<audio id="d2"><source src="./sounds/D2.mp3" type="audio/mpeg"></audio>
+			<audio id="g2"><source src="./sounds/G2.mp3" type="audio/mpeg"></audio>
+			<audio id="b2"><source src="./sounds/B2.mp3" type="audio/mpeg"></audio>
+			<audio id="upperE2"><source src="./sounds/Upper-E2.mp3" type="audio/mpeg"></audio>
+			<!--Third fret audio-->
+			<audio id="lowerE3"><source src="./sounds/Lower-E3.mp3" type="audio/mpeg"></audio>
+			<audio id="a3"><source src="./sounds/A3.mp3" type="audio/mpeg"></audio>
+			<audio id="d3"><source src="./sounds/D3.mp3" type="audio/mpeg"></audio>
+			<audio id="g3"><source src="./sounds/G3.mp3" type="audio/mpeg"></audio>
+			<audio id="b3"><source src="./sounds/B3.mp3" type="audio/mpeg"></audio>
+			<audio id="upperE3"><source src="./sounds/Upper-E3.mp3" type="audio/mpeg"></audio>
+			<!----------------------------------------------------->
+	</body>
+	<footer></footer>
+	<p class="group">PSB&trade; Authors:</p>
+	<p class="group" id="names">Eric Tolford, Gabriel Danganan, Jeremiah Elder, Alexandra Rahn</p>
+</html>
